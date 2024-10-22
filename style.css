@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Moirai+One&family=Sixtyfour+Convergence&family=Song+Myung&display=swap");
+/* 전체 페이지 스타일 */
+body {
+  /* TODO: body 스타일 설정 */
+  /* 힌트: 
+       - margin 설정
+       - font-family 설정
+       - 최소 높이 설정 (뷰포트 높이 기준)
+       - background 그라데이션 설정 */
+  /* 전체 페이지를 깔끔하고 현대적으로 디자인하려면 어떻게 해야 할까요? 
+       부드러운 그라데이션 배경과 세련된 폰트를 사용하여 시각적 흥미를 더해보세요. */
+  margin: auto;
+  min-height: 100vh;
+  background: linear-gradient(50deg, #090979, #00d4ff);
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0, "XELA" 0, "YELA" 0;
+  font-family: "Song Myung", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 중앙 컨테이너 스타일 */
+.container {
+  /* TODO: 컨테이너 스타일 설정 */
+  /* 힌트:
+       - 너비 설정
+       - 배경색 설정 (반투명)
+       - 최대 너비 설정 (뷰포트 너비 기준)
+       - 마진 설정 (중앙 정렬)
+       - 텍스트 정렬
+       - 내부 여백 설정
+       - box-sizing 설정 */
+  /* 컨테이너를 눈에 띄게 만들려면 어떻게 해야 할까요? 
+       반투명한 배경과 적당한 패딩을 사용하여 내용을 돋보이게 만들어보세요. */
+  width: 50vw;
+  background-color: rgba(92, 92, 242, 0.2);
+  position: relative;
+  max-width: 90vw;
+  margin: auto;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 입력 폼 영역 스타일 */
+.form {
+  /* TODO: 폼 영역 스타일 설정 */
+  /* 힌트:
+       - 배경색 설정
+       - border-radius 설정
+       - padding 설정 */
+  /* 폼 영역을 사용자 친화적으로 디자인하려면 어떻게 해야 할까요? 
+       부드러운 모서리와 충분한 여백을 주어 입력하기 편안한 환경을 만들어보세요. */
+  background: radial-gradient(#22c1c3, #fdbb2d);
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* 폼 제목 스타일 */
+.form h3 {
+  /* TODO: 제목 스타일 설정 */
+  /* 힌트:
+       - margin 설정
+       - 텍스트 정렬 */
+  /* 제목을 강조하려면 어떻게 해야 할까요? 
+       글꼴 크기와 굵기를 조절하여 주목도를 높여보세요. */
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* 폼 레이아웃 설정 */
+.form form {
+  /* TODO: 폼 레이아웃 설정 */
+  /* 힌트:
+       - display 설정 (그리드 사용)
+       - grid-template-columns 설정
+       - 열 사이의 간격(gap) 설정 */
+  /* 입력 필드와 버튼을 효과적으로 배치하려면 어떻게 해야 할까요? 
+       그리드 레이아웃을 활용하여 깔끔하고 반응형 있는 디자인을 만들어보세요. */
+  display: grid;
+  grid-template-columns: 1.5fr;
+  gap: 10px;
+}
+
+/* 텍스트 영역 스타일 */
+.form form textarea {
+  /* TODO: 텍스트 영역 스타일 설정 */
+  /* 힌트:
+       - 테두리 설정
+       - 아웃라인 설정
+       - 크기 조절 설정
+       - 글꼴 설정 */
+  /* 텍스트 영역을 사용자 친화적으로 만들려면 어떻게 해야 할까요? 
+       부드러운 테두리와 적절한 폰트 크기로 입력하기 편안한 환경을 조성해보세요. */
+  border: 3px solid #f8f99f;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  outline: none;
+  resize: inherit;
+  font-family: "Song Myung", serif;
+}
+
+/* 버튼 스타일 */
+.form form button {
+  /* TODO: 버튼 스타일 설정 */
+  /* 힌트:
+       - 배경색 설정
+       - 글자색 설정
+       - 글꼴 설정
+       - 둥근 모서리 설정
+       - 테두리 설정
+       - 글자 크기 설정 */
+  /* 버튼을 눈에 띄고 클릭하고 싶게 만들려면 어떻게 해야 할까요? 
+       대비되는 색상과 부드러운 모서리, 그리고 호버 효과를 추가해보세요. */
+  background-color: #00d4ff;
+  color: #090979;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+  font-family: "Song Myung", serif;
+  box-shadow: 3px 3px 3px #22c1c3;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.form form button:hover {
+  transform: translateX(-5px);
+}
+
+/* 할 일 목록 기본 스타일 */
+.list {
+  /* TODO: 목록 기본 스타일 설정 */
+  /* 힌트:
+       - padding 설정
+       - margin 설정
+       - list-style 설정 */
+  /* 할 일 목록을 깔끔하게 표시하려면 어떻게 해야 할까요? 
+       기본 리스트 스타일을 제거하고 적절한 간격을 주어 가독성을 높여보세요. */
+  padding: 10px;
+  list-style: none;
+  margin: 10px;
+}
+
+/* 각 할 일 항목 스타일 */
+.list li {
+  /* TODO: 할 일 항목 스타일 설정 */
+  /* 힌트:
+       - 배경색 설정
+       - 위쪽 마진 설정
+       - 둥근 모서리 설정
+       - display 설정 (그리드 사용)
+       - grid-template-columns 설정
+       - 열 사이 간격 설정
+       - 텍스트 정렬
+       - 내부 여백 설정 */
+  /* 각 할 일 항목을 구분하기 쉽고 보기 좋게 만들려면 어떻게 해야 할까요? 
+       밝은 배경색, 그림자 효과, 그리고 그리드 레이아웃을 활용하여 정보를 구조화해보세요. */
+  background-color: rgba(92, 145, 242, 0.15);
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  gap: 15px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+
+/* 완료 및 삭제 아이콘 컨테이너 스타일 */
+.list li .complete-icon,
+.list li .close-icon {
+  /* TODO: 아이콘 컨테이너 스타일 설정 */
+  /* 힌트:
+       - display 설정 (flex 사용)
+       - justify-content 설정
+       - align-items 설정
+       - cursor 설정 */
+  /* 아이콘을 눈에 띄고 클릭하기 쉽게 만들려면 어떻게 해야 할까요? 
+       flex를 사용하여 중앙 정렬하고, 커서를 포인터로 변경하여 상호작용 가능함을 나타내보세요. */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.list li .complete-icon:hover,
+.list li .close-icon:hover {
+  transform: scale(1.2);
+}
+
+/* 완료 및 삭제 아이콘 크기 설정 */
+.list li .complete-icon svg,
+.list li .close-icon svg {
+  /* TODO: 아이콘 크기 설정 */
+  /* 힌트: 너비 설정 */
+  /* 아이콘 크기를 적절하게 조절하려면 어떻게 해야 할까요? 
+       너무 크지 않고 너무 작지 않은 크기로 설정하여 가독성과 클릭 용이성을 모두 고려해보세요. */
+  width: 2.5rem;
+}
+
+/* 완료된 할 일 항목 스타일 */
+.list li.complete {
+  /* TODO: 완료된 항목 스타일 설정 */
+  /* 힌트: 불투명도(opacity) 설정 */
+  /* 완료된 항목을 시각적으로 구분하려면 어떻게 해야 할까요? 
+       불투명도를 낮추거나 텍스트에 취소선을 추가하여 완료 상태를 명확히 표시해보세요. */
+  opacity: 0.2;
+  /* transform: translateY(50%); */
+}
+
+/* 완료된 할 일의 완료 아이콘 색상 */
+.list li.complete .complete-icon svg {
+  /* TODO: 완료된 항목의 아이콘 색상 설정 */
+  /* 힌트: 색상 설정 */
+  /* 완료된 항목의 아이콘을 눈에 띄게 만들려면 어떻게 해야 할까요? 
+       밝고 긍정적인 색상(예: 녹색)을 사용하여 완료 상태를 강조해보세요. */
+  color: #fcb045;
+}
